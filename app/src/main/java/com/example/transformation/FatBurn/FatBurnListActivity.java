@@ -6,8 +6,14 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 
+import com.example.transformation.FatBurn.ActivityListDays.FatBurnFriListActivity;
+import com.example.transformation.FatBurn.ActivityListDays.FatBurnMonListActivity;
+import com.example.transformation.FatBurn.ActivityListDays.FatBurnSatListActivity;
+import com.example.transformation.FatBurn.ActivityListDays.FatBurnSunListActivity;
+import com.example.transformation.FatBurn.ActivityListDays.FatBurnThursListActivity;
+import com.example.transformation.FatBurn.ActivityListDays.FatBurnTuesListActivity;
+import com.example.transformation.FatBurn.ActivityListDays.FatBurnWedListActivity;
 import com.example.transformation.R;
 
 import java.util.ArrayList;
@@ -41,8 +47,38 @@ public class FatBurnListActivity extends AppCompatActivity implements FatBurnAda
     @Override
     public void addFatBurnAdapterAction(int index) {
 
-        Intent intent = new Intent(FatBurnListActivity.this, FatBurnWorkoutActivity.class);
-        intent.putExtra("index", index);
-        startActivity(intent);
+        if(index == 0){
+            Intent intent = new Intent(FatBurnListActivity.this, FatBurnSatListActivity.class);
+            startActivity(intent);
+        }
+        else if(index == 1){
+            Intent intent = new Intent(FatBurnListActivity.this, FatBurnSunListActivity.class);
+            startActivity(intent);
+        }
+        else if(index == 2){
+            Intent intent = new Intent(FatBurnListActivity.this, FatBurnMonListActivity.class);
+            startActivity(intent);
+        }
+        else if(index == 3){
+            Intent intent = new Intent(FatBurnListActivity.this, FatBurnTuesListActivity.class);
+            startActivity(intent);
+        }
+        else if(index == 4){
+            Intent intent = new Intent(FatBurnListActivity.this, FatBurnWedListActivity.class);
+            startActivity(intent);
+        }
+        else if(index == 5){
+            Intent intent = new Intent(FatBurnListActivity.this, FatBurnThursListActivity.class);
+            startActivity(intent);
+        }
+        else if(index == 6){
+            Intent intent = new Intent(FatBurnListActivity.this, FatBurnFriListActivity.class);
+            startActivity(intent);
+        }
     }
+
+
+
+
+
 }

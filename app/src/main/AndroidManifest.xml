@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.transformation" >
+    package="com.example.transformation">
 
     <application
         android:allowBackup="true"
@@ -8,9 +8,30 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Transformation" >
+        android:theme="@style/Theme.Transformation">
         <activity
-            android:name=".FatBurn.FatBurnWorkoutActivity"
+            android:name=".FatBurn.ActivityWorkoutDays.FatBurnSatWorkoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FatBurn.ActivityListDays.FatBurnFriListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FatBurn.ActivityListDays.FatBurnThursListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FatBurn.ActivityListDays.FatBurnWedListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FatBurn.ActivityListDays.FatBurnTuesListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FatBurn.ActivityListDays.FatBurnMonListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FatBurn.ActivityListDays.FatBurnSunListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FatBurn.ActivityListDays.FatBurnSatListActivity"
             android:exported="false" />
         <activity
             android:name=".FatBurn.FatBurnListActivity"
@@ -19,14 +40,8 @@
             android:name=".CalorieCountActivity"
             android:exported="false" />
         <activity
-            android:name=".BicepsBeginnerActivity"
-            android:exported="false" />
-        <activity
-            android:name=".BasicKnowledgeActivity"
-            android:exported="false" />
-        <activity
             android:name=".MainActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -85,6 +85,8 @@ public class FatBurnAdapter extends  RecyclerView.Adapter<FatBurnAdapter.ViewHol
             super(itemView);
             musicImage = itemView.findViewById(R.id.imageMusic);
             musicName = itemView.findViewById(R.id.musicName);
+
+
         }
     }
 
