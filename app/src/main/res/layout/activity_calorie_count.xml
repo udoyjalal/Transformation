@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalorieCountActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lBack1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/layout_back">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back_arrow"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"></ImageView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutInput"
+        android:background="@drawable/top_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:id="@+id/rg1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:text="Male"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:text="Female"
+            android:textColor="@color/white"
+            android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </RadioButton>
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="3"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/weightET"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Enter weight in kgs">
+        </EditText>
+
+        <EditText
+            android:id="@+id/hightET"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Enter hight in centimeters">
+        </EditText>
+
+        <EditText
+            android:id="@+id/ageET"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Enter age">
+        </EditText>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select your daily activity."
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"></TextView>
+
+        <RadioGroup
+            android:id="@+id/rg2"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+                <RadioButton
+                    android:id="@+id/radioLow"
+                    android:text="Activity Low"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/radioModerate"
+                    android:text="Activity Moderate"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/radioHigh"
+                    android:text="Activity High"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </RadioButton>
+
+        </RadioGroup>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How much time you workout daily?"
+                android:textColor="@color/white"
+                android:textSize="20sp"></TextView>
+
+            <EditText
+                android:id="@+id/workoutTimeET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Enter in minutes"
+                android:layout_marginTop="10dp"></EditText>
+    </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/submitBTN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:src="@drawable/button_background_shape"
+            android:layout_marginTop="10dp"
+            android:text="Submit"></ImageButton>
+
+
+    <LinearLayout
+        android:id="@+id/lBack2"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/layout_back">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back_arrow"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"></ImageView>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lOut"
+            android:visibility="invisible"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:orientation="horizontal"
+            android:background="@drawable/button_background_shape"
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/resultTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="result"
+                android:textSize="20sp"></TextView>
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="calories daily"
+                android:textSize="20sp"></TextView>
+        </LinearLayout>
+
+
+    </LinearLayout>
