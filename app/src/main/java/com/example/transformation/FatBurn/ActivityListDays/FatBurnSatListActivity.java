@@ -44,14 +44,47 @@ public class FatBurnSatListActivity extends AppCompatActivity implements FatBurn
         fatLossSatRV.setLayoutManager(fatBurn);
         fatLossSatRV.setAdapter(fatBurnAdapter);
 
-
     }
 
     @Override
     public void addFatBurnAdapterAction(int index) {
+
         if(index == 0){
             Intent intent = new Intent(FatBurnSatListActivity.this, FatBurnSatWorkoutActivity.class);
+            intent.putExtra("index", index);
             startActivity(intent);
         }
+        else if(index == 1){
+            Intent intent = new Intent(FatBurnSatListActivity.this, FatBurnSatWorkoutActivity.class);
+            intent.putExtra("index", index);
+            startActivity(intent);
+        }
+        else if(index == 2){
+            Intent intent = new Intent(FatBurnSatListActivity.this, FatBurnSatWorkoutActivity.class);
+            intent.putExtra("index", index);
+            startActivity(intent);
+        }
+        else if(index == 3){
+            Intent intent = new Intent(FatBurnSatListActivity.this, FatBurnSatWorkoutActivity.class);
+            intent.putExtra("index", index);
+            startActivity(intent);
+        }
+        else if(index == 4){
+            Intent intent = new Intent(FatBurnSatListActivity.this, FatBurnSatWorkoutActivity.class);
+            intent.putExtra("index", index);
+            startActivity(intent);
+        }
+        else if(index == 5){
+            Intent intent = new Intent(FatBurnSatListActivity.this, FatBurnSatWorkoutActivity.class);
+            intent.putExtra("index", index);
+            startActivity(intent);
+        }
+        else if(index == 6){
+            Intent intent = new Intent(FatBurnSatListActivity.this, FatBurnSatWorkoutActivity.class);
+            intent.putExtra("index", index);
+            startActivity(intent);
+        }
+
+
     }
 }

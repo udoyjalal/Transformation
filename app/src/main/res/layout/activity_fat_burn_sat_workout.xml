@@ -1,20 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".FatBurn.ActivityWorkoutDays.FatBurnSatWorkoutActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="200dp"
-        android:text="Sat Workout"
-        android:textSize="50sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints"></TextView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_width="350dp"
+        android:layout_height="300dp">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/fatBurnWorkOutGif"
+            android:background="@drawable/concentrated"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </pl.droidsonroids.gif.GifImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/fatBurnWorkOutTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="nfoieuvherveviunbvieuehnvioeunhcirtv5irvngktrhhvkvnfoieuvherveviunbvieuehnvioeunhcirtv5irvngktrhhvkv"
+            android:textSize="20sp"
+            android:layout_marginTop="15dp">
+
+        </TextView>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
