@@ -10,6 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Transformation">
         <activity
+            android:name=".DoneScreen"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Transparent"/>
+        <activity
             android:name=".FatBurn.ActivityWorkoutDays.FatBurnSatWorkoutActivity"
             android:exported="false" />
         <activity
