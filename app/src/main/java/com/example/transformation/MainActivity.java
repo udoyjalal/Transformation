@@ -18,16 +18,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         getSupportActionBar().hide();
 
-        calorieCountLayout = findViewById(R.id.layoutCalorieCount);
-        calorieCountLayout.setClickable(true);
-        calorieCountLayout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, CalorieCountActivity.class);
-                startActivity(intent);
-            }
-        });
-
         fatBurnLayout = findViewById(R.id.layoutBiceps);
         fatBurnLayout.setClickable(true);
 
@@ -38,5 +28,17 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        calorieCountLayout = findViewById(R.id.layoutCalorieCount);
+        calorieCountLayout.setClickable(true);
+        calorieCountLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, CalorieCountActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
     }
 }

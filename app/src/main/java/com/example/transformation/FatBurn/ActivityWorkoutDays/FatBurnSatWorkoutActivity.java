@@ -4,6 +4,8 @@ import static android.view.View.GONE;
 
 import static com.example.transformation.R.color.purple_500;
 
+import static java.security.AccessController.getContext;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
@@ -47,6 +49,7 @@ public class FatBurnSatWorkoutActivity extends AppCompatActivity {
     CountDownTimer mCountDownTimer;
     int i=0;
     private SharedPreferences prefs, sherdHelp2;
+    MediaPlayer soundPlayer;
 
 
     @SuppressLint("MissingInflatedId")
@@ -62,6 +65,9 @@ public class FatBurnSatWorkoutActivity extends AppCompatActivity {
             Log.d(TAG, ">>>>>>>>> "+ position);
         }
 
+        soundPlayer = MediaPlayer.create(this, R.raw.beep_1);
+
+
 //        sherdHelp2 = PreferenceManager.getDefaultSharedPreferences(this);
 //
 //        if (sherdHelp2.getBoolean("b", true)) {
@@ -74,6 +80,9 @@ public class FatBurnSatWorkoutActivity extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                running = false;
+                mCountDownTimer.onFinish();
+                soundPlayer.stop();
                 finish();
             }
         });
@@ -221,7 +230,8 @@ public class FatBurnSatWorkoutActivity extends AppCompatActivity {
 
                          if(secondsStop == 30 && seconds == 10){
                             running = false;
-                            seconds = 0;
+                             soundPlayer.start(); 
+                             seconds = 0;
                             mProgressBar.setVisibility(GONE);
                             Intent intent = new Intent(FatBurnSatWorkoutActivity.this, DoneScreen.class);
                             startActivity(intent);
@@ -230,6 +240,7 @@ public class FatBurnSatWorkoutActivity extends AppCompatActivity {
 
                         else if(seconds == 10 ){
                             running = false;
+                            soundPlayer.start();
                             mProgressBar.setVisibility(View.VISIBLE);
                             mCountDownTimer.start();
                         }
