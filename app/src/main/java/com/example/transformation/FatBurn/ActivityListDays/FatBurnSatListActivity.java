@@ -7,6 +7,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
 
 import com.example.transformation.FatBurn.ActivityWorkoutDays.FatBurnSatWorkoutActivity;
 import com.example.transformation.FatBurn.FatBurnAdapter;
@@ -35,6 +37,14 @@ public class FatBurnSatListActivity extends AppCompatActivity implements FatBurn
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fat_burn_sat_list);
         getSupportActionBar().hide();
+
+        TextView back = findViewById(R.id.back);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
 
         fatLossSatRV = (RecyclerView) findViewById(R.id.fatBurnSatRecyclerView);
         fatBurnDataModelList =  new ImageData().getSatData(this);

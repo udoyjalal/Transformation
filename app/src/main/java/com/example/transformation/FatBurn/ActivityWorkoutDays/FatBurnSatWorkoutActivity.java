@@ -8,13 +8,16 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
+import android.preference.PreferenceManager;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -43,6 +46,8 @@ public class FatBurnSatWorkoutActivity extends AppCompatActivity {
     ProgressBar mProgressBar;
     CountDownTimer mCountDownTimer;
     int i=0;
+    private SharedPreferences prefs, sherdHelp2;
+
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -57,6 +62,14 @@ public class FatBurnSatWorkoutActivity extends AppCompatActivity {
             Log.d(TAG, ">>>>>>>>> "+ position);
         }
 
+//        sherdHelp2 = PreferenceManager.getDefaultSharedPreferences(this);
+//
+//        if (sherdHelp2.getBoolean("b", true)) {
+//            Intent intent = new Intent(FatBurnSatWorkoutActivity.this, DoneScreen.class);
+//            startActivity(intent);
+//        }
+
+
         TextView back = findViewById(R.id.back);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -64,6 +77,8 @@ public class FatBurnSatWorkoutActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+
 
         setsView = (TextView)findViewById(R.id.sets);
         setsView.setText("Set 1");
@@ -208,6 +223,8 @@ public class FatBurnSatWorkoutActivity extends AppCompatActivity {
                             running = false;
                             seconds = 0;
                             mProgressBar.setVisibility(GONE);
+                            Intent intent = new Intent(FatBurnSatWorkoutActivity.this, DoneScreen.class);
+                            startActivity(intent);
 
                         }
 
