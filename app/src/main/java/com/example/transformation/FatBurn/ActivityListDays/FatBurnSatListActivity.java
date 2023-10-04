@@ -94,6 +94,17 @@ public class FatBurnSatListActivity extends AppCompatActivity implements FatBurn
             intent.putExtra("index", index);
             startActivity(intent);
         }
+        else if(index == 7){
+            Intent intent = new Intent(FatBurnSatListActivity.this, FatBurnSatWorkoutActivity.class);
+            intent.putExtra("index", index);
+            startActivity(intent);
+        }
+        else if(index == 8){
+            Intent intent = new Intent(FatBurnSatListActivity.this, FatBurnSatWorkoutActivity.class);
+            intent.putExtra("index", index);
+            startActivity(intent);
+        }
+
 
 
     }

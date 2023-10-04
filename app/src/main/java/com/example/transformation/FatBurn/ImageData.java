@@ -29,14 +29,108 @@ public class ImageData {
 
     public static ArrayList<FatBurnDataModel> getSatData(Context context){
         ArrayList<FatBurnDataModel> fatBurnDataModelList = new ArrayList<>();
-        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"A"));
-        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"B"));
-        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"c"));
-        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"D"));
-        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"E"));
-        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"F"));
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"Squats"));
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"Jumping  Jacks"));
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"High Stepping"));
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"Mountain Climber"));
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"Push Ups"));
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"Triceps Dips"));
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"Bicycle Crunches"));
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"Butt Bridge"));
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"V Up"));
 
         return  fatBurnDataModelList;
     }
+
+    public static ArrayList<FatBurnDataModel> getSunData(Context context){
+        ArrayList<FatBurnDataModel> fatBurnDataModelList = new ArrayList<>();
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"Push Ups"));
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"Lunges"));
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"Burpees"));
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"Reverse Crunches"));
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"Plank"));
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"Cobra Stretch"));
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"Long Arm Crunches"));
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"Abdominal  Crunches"));
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"Plank Jacks"));
+
+        return  fatBurnDataModelList;
+    }
+
+    public static ArrayList<FatBurnDataModel> getMonData(Context context){
+        ArrayList<FatBurnDataModel> fatBurnDataModelList = new ArrayList<>();
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"Skipping Without Rope"));
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"Squat Pulses"));
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"Heel Touch"));
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"Flutter Kicks"));
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"Lateral Plank Walk"));
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"Leg Raises"));
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"Plank Jacks"));
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"Butt Bridge"));
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"V Up"));
+
+        return  fatBurnDataModelList;
+    }
+
+    public static ArrayList<FatBurnDataModel> getTuesData(Context context){
+        ArrayList<FatBurnDataModel> fatBurnDataModelList = new ArrayList<>();
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"Squats"));
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"Step Up onto Chair"));
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"V Up"));
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"Push Ups"));
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"Jumping  Jacks"));
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"Burpees"));
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"Triceps Dips"));
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"Cobra Stretch"));
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"Butt Bridge"));
+
+        return  fatBurnDataModelList;
+    }
+
+    public static ArrayList<FatBurnDataModel> getWedData(Context context){
+        ArrayList<FatBurnDataModel> fatBurnDataModelList = new ArrayList<>();
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"Squats"));
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"Jumping Jacks"));
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"Mountain Climber"));
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"Push Ups"));
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"Triceps Dips"));
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"Lateral Plank Walk"));
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"Step Up onto Chair"));
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"Burpees"));
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"Squat Pulses"));
+
+        return  fatBurnDataModelList;
+    }
+
+    public static ArrayList<FatBurnDataModel> getThurData(Context context){
+        ArrayList<FatBurnDataModel> fatBurnDataModelList = new ArrayList<>();
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"Push Ups"));
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"Jumping Jacks"));
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"Reverse Crunches"));
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"Plank"));
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"Cobra Stretch"));
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"Long Arm Crunches"));
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"Leg Raises"));
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"Butt Bridge"));
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"V Up"));
+
+        return  fatBurnDataModelList;
+    }
+
+    public static ArrayList<FatBurnDataModel> getFriData(Context context){
+        ArrayList<FatBurnDataModel> fatBurnDataModelList = new ArrayList<>();
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"Skipping Without Rope"));
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"Squat Pulses"));
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"Heel Touch"));
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"Flutter Kicks"));
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"Lateral Plank Walk"));
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"Triceps Dips"));
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"Leg Raises"));
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"Plank Jacks"));
+        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.concentrated,"Bicycle Crunches"));
+
+        return  fatBurnDataModelList;
+    }
+
 
 }

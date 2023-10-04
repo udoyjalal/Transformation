@@ -10,10 +10,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Transformation">
         <activity
+            android:name=".FatBurn.ActivityWorkoutDays.FatBurnFriWorkoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FatBurn.ActivityWorkoutDays.FatBurnThurWorkoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FatBurn.ActivityWorkoutDays.FatBurnWedWorkoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FatBurn.ActivityWorkoutDays.FatBurnTuesWorkoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FatBurn.ActivityWorkoutDays.FatBurnMonWorkoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FatBurn.ActivityWorkoutDays.FatBurnSunWorkoutActivity"
+            android:exported="false" />
+        <activity
             android:name=".DoneScreen"
             android:exported="false"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.Transparent"/>
+            android:theme="@style/Theme.Transparent" />
         <activity
             android:name=".FatBurn.ActivityWorkoutDays.FatBurnSatWorkoutActivity"
             android:exported="false" />
