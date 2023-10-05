@@ -106,5 +106,10 @@ public class FatBurnTuesListActivity extends AppCompatActivity implements FatBur
 
 
     }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
+    }
 
 }

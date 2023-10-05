@@ -106,5 +106,10 @@ public class FatBurnThursListActivity extends AppCompatActivity implements FatBu
 
 
     }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
+    }
 
 }

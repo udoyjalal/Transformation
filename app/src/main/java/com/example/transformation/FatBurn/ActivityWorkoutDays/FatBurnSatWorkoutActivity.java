@@ -2,6 +2,7 @@ package com.example.transformation.FatBurn.ActivityWorkoutDays;
 
 import static android.view.View.GONE;
 
+import static com.example.transformation.R.color.black;
 import static com.example.transformation.R.color.purple_500;
 
 import static java.security.AccessController.getContext;
@@ -12,6 +13,7 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -36,7 +38,7 @@ public class FatBurnSatWorkoutActivity extends AppCompatActivity {
     public static String TAG = "FatBurnSatWorkoutActivity";
     int position;
     GifImageView gifImageView;
-    TextView textView;
+    TextView textView, title;
     TextView setsView;
 
     private int seconds = 0;
@@ -94,34 +96,59 @@ public class FatBurnSatWorkoutActivity extends AppCompatActivity {
 
         gifImageView = findViewById(R.id.fatBurnWorkOutGif);
         textView = findViewById(R.id.fatBurnWorkOutTextView);
+        textView.setTextSize(14);
+
+        title = (TextView)findViewById(R.id.fatBurnWorkOutTitle);
+        title.setTextSize(20);
+        title.setTypeface(Typeface.DEFAULT_BOLD);
+
+
 
         if(position == 0){
             gifImageView.setBackgroundResource(R.drawable.fit);
-            textView.setText(R.string.content);
+            textView.setText(R.string.squats);
+            title.setText("SQUATS");
+
         }
         else if(position == 1){
-            gifImageView.setBackgroundResource(R.drawable.concentrated);
-            textView.setText("yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy");
-
+            gifImageView.setBackgroundResource(R.drawable.fit);
+            textView.setText(R.string.jumpingjacks);
+            title.setText("JUMPING JACKS");
         }
         else if(position == 2){
-            gifImageView.setBackgroundResource(R.drawable.concentrated);
-            textView.setText("yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy");
-
+            gifImageView.setBackgroundResource(R.drawable.fit);
+            textView.setText(R.string.highstepping);
+            title.setText("HIGH STEPPING");
         }
         else if(position == 3){
-            gifImageView.setBackgroundResource(R.drawable.concentrated);
-            textView.setText("yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy");
-
+            gifImageView.setBackgroundResource(R.drawable.fit);
+            textView.setText(R.string.mountainclimber);
+            title.setText("MOUNTAIN CLIMBER");
         }
         else if(position == 4){
-            gifImageView.setBackgroundResource(R.drawable.concentrated);
-            textView.setText("yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy");
-
+            gifImageView.setBackgroundResource(R.drawable.fit);
+            textView.setText(R.string.pushups);
+            title.setText("PUSH UPS");
         }
         else if(position == 5){
-            gifImageView.setBackgroundResource(R.drawable.concentrated);
-            textView.setText("yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy");
+            gifImageView.setBackgroundResource(R.drawable.fit);
+            textView.setText(R.string.tricepsdips);
+            title.setText("TRICEPS DIPS");
+        }
+        else if(position == 6){
+            gifImageView.setBackgroundResource(R.drawable.fit);
+            textView.setText(R.string.bicyclecrunches);
+            title.setText("BICYCLE CRUNCHES");
+        }
+        else if(position == 7){
+            gifImageView.setBackgroundResource(R.drawable.fit);
+            textView.setText(R.string.buttbridge);
+            title.setText("BUTT BRIDGE");
+        }
+        else if(position == 8){
+            gifImageView.setBackgroundResource(R.drawable.fit);
+            textView.setText(R.string.vup);
+            title.setText("V UP");
         }
 
 
@@ -259,7 +286,12 @@ public class FatBurnSatWorkoutActivity extends AppCompatActivity {
         });
     }
 
-
-
-
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        running = false;
+        mCountDownTimer.onFinish();
+        soundPlayer.stop();
+        finish();
+    }
 }

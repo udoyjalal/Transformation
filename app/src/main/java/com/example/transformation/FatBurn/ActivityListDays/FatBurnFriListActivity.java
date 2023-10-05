@@ -104,8 +104,12 @@ public class FatBurnFriListActivity extends AppCompatActivity implements FatBurn
             startActivity(intent);
         }
 
+    }
 
-
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
     }
 
 }

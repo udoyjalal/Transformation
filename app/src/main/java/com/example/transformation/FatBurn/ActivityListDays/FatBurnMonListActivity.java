@@ -107,5 +107,9 @@ public class FatBurnMonListActivity extends AppCompatActivity implements FatBurn
 
 
     }
-
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
+    }
 }
