@@ -3,30 +3,29 @@
     android:layout_width="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:background="@color/white"
+    android:background="#E1F5FE"
     android:layout_height="wrap_content">
 
     <LinearLayout
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="70dp">
 
         <LinearLayout
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:orientation="vertical">
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:cardCornerRadius="5dp"
-                android:layout_margin="5dp"
                 android:elevation="10dp">
 
                 <pl.droidsonroids.gif.GifImageView
                     android:id="@+id/imageMusic"
+                    android:scaleType="fitXY"
                     android:background="@drawable/ic_launcher_background"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
@@ -44,8 +43,8 @@
             <TextView
                 android:id="@+id/musicName"
                 android:textColor="@color/black"
-                android:layout_marginTop="10dp"
-                android:layout_width="160sp"
+                android:layout_marginTop="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="vbifebibir    vievbier"
                 android:textSize="15sp">

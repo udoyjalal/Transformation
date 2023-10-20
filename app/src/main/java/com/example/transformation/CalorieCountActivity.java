@@ -41,6 +41,14 @@ public class CalorieCountActivity extends AppCompatActivity {
         setContentView(R.layout.activity_calorie_count);
         getSupportActionBar().hide();
 
+        TextView back = findViewById(R.id.back);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+
         age = findViewById(R.id.age);
         height = findViewById(R.id.height);
         weight = findViewById(R.id.weight);
@@ -192,7 +200,7 @@ public class CalorieCountActivity extends AppCompatActivity {
 
     private void finalCalories() {
 
-        finalCalorieTV.setTextSize(25);
+        finalCalorieTV.setTextSize(18);
         if (activityRG.getCheckedRadioButtonId() == zeroActivity.getId()) {
             finalCalorieTV.setText("Daily Calories needed: " + String.format("%.2f", totalCalories));
         }
@@ -214,4 +222,10 @@ public class CalorieCountActivity extends AppCompatActivity {
 
 
     }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
+    }
+
 }

@@ -105,48 +105,48 @@ public class FatBurnSatWorkoutActivity extends AppCompatActivity {
 
 
         if(position == 0){
-            gifImageView.setBackgroundResource(R.drawable.fit);
+            gifImageView.setBackgroundResource(R.drawable.squats);
             textView.setText(R.string.squats);
             title.setText("SQUATS");
 
         }
         else if(position == 1){
-            gifImageView.setBackgroundResource(R.drawable.fit);
+            gifImageView.setBackgroundResource(R.drawable.jumping_jacks);
             textView.setText(R.string.jumpingjacks);
             title.setText("JUMPING JACKS");
         }
         else if(position == 2){
-            gifImageView.setBackgroundResource(R.drawable.fit);
+            gifImageView.setBackgroundResource(R.drawable.high_stepping);
             textView.setText(R.string.highstepping);
             title.setText("HIGH STEPPING");
         }
         else if(position == 3){
-            gifImageView.setBackgroundResource(R.drawable.fit);
+            gifImageView.setBackgroundResource(R.drawable.mountain_climber);
             textView.setText(R.string.mountainclimber);
             title.setText("MOUNTAIN CLIMBER");
         }
         else if(position == 4){
-            gifImageView.setBackgroundResource(R.drawable.fit);
+            gifImageView.setBackgroundResource(R.drawable.push_ups);
             textView.setText(R.string.pushups);
             title.setText("PUSH UPS");
         }
         else if(position == 5){
-            gifImageView.setBackgroundResource(R.drawable.fit);
+            gifImageView.setBackgroundResource(R.drawable.triceps_dips);
             textView.setText(R.string.tricepsdips);
             title.setText("TRICEPS DIPS");
         }
         else if(position == 6){
-            gifImageView.setBackgroundResource(R.drawable.fit);
+            gifImageView.setBackgroundResource(R.drawable.bicycle_crunches);
             textView.setText(R.string.bicyclecrunches);
             title.setText("BICYCLE CRUNCHES");
         }
         else if(position == 7){
-            gifImageView.setBackgroundResource(R.drawable.fit);
+            gifImageView.setBackgroundResource(R.drawable.butt_bridge);
             textView.setText(R.string.buttbridge);
             title.setText("BUTT BRIDGE");
         }
         else if(position == 8){
-            gifImageView.setBackgroundResource(R.drawable.fit);
+            gifImageView.setBackgroundResource(R.drawable.v_up);
             textView.setText(R.string.vup);
             title.setText("V UP");
         }
