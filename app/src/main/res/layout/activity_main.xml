@@ -5,13 +5,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#01579B"
     android:orientation="vertical">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/top_background">
-    </LinearLayout>
+        android:layout_height="200dp">
+
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/img1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/a"></ImageView>
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/img2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/b"></ImageView>
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/img3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/k"></ImageView>
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/img4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/done"></ImageView>
+
+    </RelativeLayout>
 
     <!--Now add the NestedScollView-->
     <androidx.core.widget.NestedScrollView
@@ -39,7 +69,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Weight loss"
+                    android:text="Fat loss"
                     android:textSize="30sp"
                     android:gravity="center"
                     android:textColor="@color/white"
@@ -49,6 +79,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/heightAndWeight"
                 android:clickable="true"
                 android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
@@ -57,7 +88,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Weight Gain"
+                    android:text="Height &amp; Weight"
                     android:textSize="30sp"
                     android:gravity="center"
                     android:textColor="@color/white"

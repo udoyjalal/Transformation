@@ -3,19 +3,21 @@
     android:layout_width="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:background="#E1F5FE"
+    android:background="#01579B"
     android:layout_height="wrap_content">
 
     <LinearLayout
+        android:background="@color/white"
         android:layout_marginTop="0dp"
-        android:layout_marginBottom="10dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="70dp">
 
         <LinearLayout
-            android:layout_width="70dp"
+            android:layout_width="85dp"
             android:layout_height="70dp"
             android:orientation="vertical">
             <androidx.cardview.widget.CardView
@@ -43,7 +45,7 @@
             <TextView
                 android:id="@+id/musicName"
                 android:textColor="@color/black"
-                android:layout_marginTop="0dp"
+                android:layout_marginTop="3dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="vbifebibir    vievbier"

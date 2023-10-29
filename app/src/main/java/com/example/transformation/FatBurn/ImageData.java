@@ -132,5 +132,13 @@ public class ImageData {
         return  fatBurnDataModelList;
     }
 
+//    public static ArrayList<FatBurnDataModel> getImageFoeSlide(Context context){
+//        ArrayList<FatBurnDataModel> fatBurnDataModelList = new ArrayList<>();
+//        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.skipping_without_rope,"Skipping Without Rope"));
+//        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.squat_pulses,"Squat Pulses"));
+//        fatBurnDataModelList.add(new FatBurnDataModel(R.drawable.heel_touch,"Heel Touch"));
+//
+//        return  fatBurnDataModelList;
+//    }
 
 }

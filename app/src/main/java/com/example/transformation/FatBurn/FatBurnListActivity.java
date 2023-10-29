@@ -4,9 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.TextView;
 
 import com.example.transformation.FatBurn.ActivityListDays.FatBurnFriListActivity;
@@ -29,11 +34,24 @@ public class FatBurnListActivity extends AppCompatActivity implements FatBurnAda
     ArrayList<FatBurnDataModel> fatBurnDataModelList;
     ItemClickListenerFatBurn itemClickListenerFatBurn;
 
+    @SuppressLint("ResourceAsColor")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fat_burn);
+
+        // Hide the action bar
         getSupportActionBar().hide();
+
+        // Hide the status bar.
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+        // Hide the navigation bar
+        View decorView = getWindow().getDecorView();
+        int uiOptions = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+                | View.SYSTEM_UI_FLAG_FULLSCREEN;
+        decorView.setSystemUiVisibility(uiOptions);
+
 
         TextView back = findViewById(R.id.back);
         back.setOnClickListener(new View.OnClickListener() {

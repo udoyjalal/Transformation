@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Transformation">
         <activity
+            android:name=".HeightAndWeightActivity"
+            android:exported="false" />
+        <activity
             android:name=".FatBurn.ActivityWorkoutDays.FatBurnFriWorkoutActivity"
             android:exported="false" />
         <activity
